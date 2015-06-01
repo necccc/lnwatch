@@ -1,6 +1,6 @@
 {
   "name": "lnwatch",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "Small utility for node, to watch symlink changes.",
   "main": "lnwatch.js",
   "directories": {
@@ -14,9 +14,7 @@
     "mocha": "1.12.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/*.js",
-    "prepublish": "semantic-release pre",
-    "postpublish": "semantic-release post"
+    "test": "./node_modules/mocha/bin/mocha test/*.js"
   },
   "repository": {
     "type": "git",
