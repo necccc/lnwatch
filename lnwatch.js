@@ -9,12 +9,8 @@ var path = require('path');
  * @param {Object} defaults
  * @constructor
  */
-function LnWatch (defaults) {
+function LnWatch () {
 	events.EventEmitter.call(this);
-
-	if (defaults) {
-		this.defaults = defaults;
-	}
 }
 
 util.inherits(LnWatch, events.EventEmitter);
