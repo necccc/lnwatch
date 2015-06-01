@@ -39,7 +39,7 @@ suite('lnwatch', function() {
 
 	test("single link", function (done) {
 
-		this.timeout(6000);
+		this.timeout(10000);
 
 		lnw.add('./foo');
 
