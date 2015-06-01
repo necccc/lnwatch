@@ -1,0 +1,39 @@
+{
+  "name": "lnwatch",
+  "version": "0.0.0-semantically-released",
+  "description": "Small utility for node, to watch symlink changes.",
+  "main": "lnwatch.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-release": "^3.3.1",
+    "chai": "1.7.2",
+    "sinon": "1.7.3",
+    "mocha": "1.12.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/*.js",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/necccc/lnwatch.git"
+  },
+  "keywords": [
+    "symlink",
+    "ln",
+    "watch",
+    "observe",
+    "soft",
+    "link"
+  ],
+  "author": "nec@shell8.net",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/necccc/lnwatch/issues"
+  },
+  "homepage": "https://github.com/necccc/lnwatch"
+}

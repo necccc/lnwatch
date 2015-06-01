@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '0.10'
+install: npm install
+sudo: false
+cache:
+  directories:
+  - node_modules
+before_deploy:
+- npm config set spin false --global
+env:
+  global:
+  - GH_TOKEN=1510bc9047b2832c66ddc1a917832e7f3f57a903
+  - secure: ktD2qVp2Ss+jtXZALHebu69zuQ4mf2+mA8IpzxzOOGtqKGDY71zuvCKa7s8FUeI/dupEEtK6QZ276XeaIrEpX/sNNQa3e7ubGbif29gV0xkVP8WQ0nvhqnSFoft6+UBiw4zQtbx/WpRmyw3+vr+lOl7AC4gBTEy6HQkQzQYmw25Vu3DszBuXnbIdnv3MoBOEt0/AgiG8RLCsnHQ4BFA9j3zN2bJLd6PEBtvE9mPWU+qKhHSoJz9AdEabq37zD9Lcpis3OPJNe70a0E0M4wNHel+Mruv6PJXK1sd+C8vKtuF72ifcRRmLKDPdnw783tk0aray2bQuRz3Z1/EIonRwID2YSyxUnCfxtmFLJZuYlIP5wBmFdYqyQ0grAmTDr+8A8QpxxurtkvLDGPBW9gZ+N5LD+ods8gncZSi4w1rjY3mOVvPziflwpu/PcclQ/+bGTGOieoSvYBr6buW3GW6KAYJEQYK4TQLZZv10cXyeWk0ixhXT56hkgo3vxL7LruG8Ngq+owS7nmD4CEG13mnYkBsDUCN7mqi8nLRoTeCpdGSsr4YjWRA84HF8co16PXtXvg2TmGlU3aF9NFtDw2zyW7ygMIAR9ufz9tWlfbC4YLcn6/NNuePIBfRj9IH9wzq/uUJEEZobXr0tXcAlk9fbq/f4WbSv9eOYOUXv+EteQhU=
+deploy:
+  provider: npm
+  email: nec@shell8.net
+  skip_cleanup: true
+  api_key:
+    secure: YlVCuVIf007y4/5w5Sn9aVeGqS+ERoc0PeeXsni9ml3vtYZ5E/dvimaEFOH7ZprRUBH0CylyWBLfEQfXsbXhoPQvknBTCQ8sn20CpnPGaHfZLmFZQjngtu7zgXoJ+QVHaAaofWx0lCSy3GEoZHokUk73ir1N+4tHpeqWRG8DVaZEi8dJ7FhQAC7C4cBs+gveB8hmHNc5VwBjpwGat3bW2+DXiRPo+gqFqlz0k1G/KD0YPkCnvpreQYfTKro6YgLqlEnCR2+yq70Z46QWFDhdPHHxJk2HOyPpo/pCv8VzP8F/w8bdkisM2ti6SEbKipz1wfEQvGMqW/vYywe5OrQAWhtvnZgHKIyStFIXXA05q4teG/9c2mlmin2R2GxiXmQYzm9+8rs2C8oWA5jpJ2EUVUU+atQpUNEwJqjcE9rmhP8lAKxGfHfypcRNMywcvQyt17IgmkgGki4QYiW35eZvlGmkx6rx7nv91IrzMSh3HVuMStkvSHdVuLnnvixSDoPLLLC4dmwa5SHydvnwE26SkNRNUdMhq9G39vvi+e7rQtw4ygGuUIiAp/+iPO6UcetumXym1isu81vcZb519slqGDqPMC/Hnqo31QdYoaQDlx1g0AEqs4k8uK+WQor563d8/MKiSq69A8Yy/8xTxriA5ZaERJfxAovxhnN/CEedDoY=
+  on:
+    branch: master
+    repo: necccc/lnwatch
