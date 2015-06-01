@@ -39,7 +39,7 @@ suite('lnwatch', function() {
 
 	test("single link", function (done) {
 
-		this.timeout(5000);
+		this.timeout(6000);
 
 		lnw.add('./foo');
 
@@ -65,7 +65,7 @@ suite('lnwatch', function() {
 
 	test("multiple links", function (done) {
 
-		this.timeout(5000);
+		this.timeout(6000);
 
 		lnw.add(['./foo', './bar']);
 
@@ -90,7 +90,7 @@ suite('lnwatch', function() {
 
 	test("add link later", function (done) {
 
-		this.timeout(5000);
+		this.timeout(6000);
 
 		var count = 0;
 
@@ -130,7 +130,7 @@ suite('lnwatch', function() {
 
 	test("remove all", function (done) {
 
-		this.timeout(5000);
+		this.timeout(6000);
 
 		lnw.add(['./foo', './bar']);
 
