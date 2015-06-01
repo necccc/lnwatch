@@ -1,6 +1,6 @@
 {
   "name": "lnwatch",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "Small utility for node, to watch symlink changes.",
   "main": "lnwatch.js",
   "directories": {
@@ -8,6 +8,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "grunt-release": "latest",
+    "grunt": "latest",
     "semantic-release": "^3.3.1",
     "chai": "1.7.2",
     "sinon": "1.7.3",
@@ -28,6 +30,9 @@
     "soft",
     "link"
   ],
+  "engines": {
+    "node": ">= 0.10"
+  },
   "author": "nec@shell8.net",
   "license": "MIT",
   "bugs": {
