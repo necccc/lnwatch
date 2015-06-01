@@ -2,7 +2,6 @@ var fs = require('fs');
 var lnw = require('../lnwatch.js');
 var assert = require('assert');
 
-var sys = require('sys')
 var exec = require('child_process').exec;
 
 var ln_sfn = function (from, to) {
@@ -16,9 +15,7 @@ var ln_sfn = function (from, to) {
 	exec(['ln -sfn', from, to].join(' '), puts);
 }
 
-
 suite('lnwatch', function() {
-
 
 	setup(function () {
 		fs.mkdirSync('./one');
