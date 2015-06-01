@@ -1,5 +1,7 @@
 # lnwatch
 
+[![Build Status](https://travis-ci.org/necccc/lnwatch.svg?branch=master)](https://travis-ci.org/necccc/lnwatch)
+
 Small utility for node, to watch symlink changes.
 
 ---
