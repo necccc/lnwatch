@@ -2,6 +2,8 @@ var fs = require('fs');
 var lnw = require('../lnwatch.js');
 var assert = require('assert');
 
+lnw.defaults.interval = 1000;
+
 var exec = require('child_process').exec;
 
 var ln_sfn = function (from, to) {
@@ -52,7 +54,7 @@ suite('lnwatch', function() {
 			assert.equal(toa[toa.length-1],'three');
 
 			lnw.remove('./foo');
-			lnw.removeAllListeners('change')
+			lnw.removeAllListeners('change');
 
 			done();
 		});
@@ -106,7 +108,6 @@ suite('lnwatch', function() {
 				assert.equal(linka[linka.length-1],'bar');
 				assert.equal(froma[froma.length-1],'two');
 				assert.equal(toa[toa.length-1],'one');
-
 
 				lnw.remove('./foo');
 				lnw.remove( './bar');
